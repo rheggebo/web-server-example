@@ -14,13 +14,29 @@ The C++ IDE [juCi++](https://github.com/cppit/jucipp) should be installed.
 ### MacOS
 `brew install boost`
 
-## Compiling and running
+## Download
 ```sh
 git clone https://github.com/ntnu-tdat3020/web-server-example
-juci web-server-example
 ```
 
-Choose Compile and Run in the Project menu.
+## Compile and run
+### Alternative 1
+In a terminal:
+```sh
+juci web-server-example
+```
+In juCi++, choose Compile and Run in the Project menu.
+
+### Alternative 2
+In a terminal:
+```sh
+cd web-server-example
+mkdir build
+cd build
+cmake ..
+make
+./web_server  # Press control-c to stop the server
+```
 
 ### See web page
 #### Alternative 1
@@ -36,7 +52,7 @@ GET / HTTP/1.1
 ```
 
 ## Debugging
-First, stop the web server (if it is running) by choosing Kill Last Process in the juCi++ Project menu.
+First, stop the web server (if it is running). In juCi++, choosing Kill Last Process in the Project menu.
 
 In a terminal:
 ```sh
